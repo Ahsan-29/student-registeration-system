@@ -1,4 +1,4 @@
-# Student Biodata Android App
+# Student-registeration-system app
 
 In our android we will using retrofit that helps to connect our andorid app with a backend for this if we are using andorid device attached with our pc
 we have to write a command on a laravel terminal (i-e php artisan serv --host="pc ip-address"  --port=3306) then on hitting it our server starts along with ipaddress with mysql port number.
