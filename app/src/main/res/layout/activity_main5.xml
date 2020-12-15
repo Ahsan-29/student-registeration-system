@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@drawable/bgi"
+    tools:context=".MainActivity5">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:padding="25dp"
+        android:background="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11pt"
+            android:textAlignment="center"
+            android:text="Delete student record"/>
+
+        <EditText
+            android:layout_marginTop="25dp"
+            android:inputType="number"
+            android:hint="Enter id"
+            android:id="@+id/e1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:visibility="gone"
+            android:inputType="text"
+            android:layout_below="@+id/e1"
+            android:hint="Enter Email"
+            android:id="@+id/e2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:visibility="gone"
+            android:inputType="text"
+            android:layout_below="@id/e2"
+            android:hint="Enter Password"
+            android:id="@+id/e3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:visibility="gone"
+            android:inputType="text"
+            android:layout_below="@+id/e3"
+            android:hint="Enter name"
+            android:id="@+id/e4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:visibility="gone"
+            android:inputType="text"
+            android:layout_below="@+id/e4"
+            android:hint="Enter school"
+            android:id="@+id/e5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:visibility="gone"
+            android:layout_below="@+id/e5"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/api_list">
+
+
+            <TextView
+                android:id="@+id/text_view_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000" />
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="update"/>
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="delete"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll1">
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/clear"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear"/>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

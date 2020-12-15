@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@drawable/bgi"
+    tools:context=".MainActivity">
+
+
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:padding="25dp"
+        android:background="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11pt"
+            android:textAlignment="center"
+            android:text="Student_Registeration\nSystem"/>
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Add a student" />
+
+        <Button
+            android:textAllCaps="false"
+            android:layout_marginTop="25dp"
+            android:id="@+id/b2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get student list"/>
+
+        <Button
+            android:textAllCaps="false"
+            android:layout_marginTop="25dp"
+            android:id="@+id/b3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update a record"/>
+
+        <Button
+            android:textAllCaps="false"
+            android:layout_marginTop="25dp"
+            android:id="@+id/b4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete a student "/>
+    </LinearLayout>
+
+</RelativeLayout>
